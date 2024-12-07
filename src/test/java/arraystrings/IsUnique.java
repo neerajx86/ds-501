@@ -14,8 +14,8 @@ public class IsUnique {
         char[] characters = sentence.toCharArray();
         Arrays.sort(characters);
 
-        for (int i = 0, j = 1; j < characters.length; i++, j++) {
-            if (characters[i] == characters[j]) {
+        for (int i = 0; i < characters.length - 1; i++) {
+            if (characters[i] == characters[i + 1]) {
                 return false;
             }
         }
