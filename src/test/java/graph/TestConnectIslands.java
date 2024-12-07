@@ -23,11 +23,11 @@ public class TestConnectIslands {
                 if (visited[i][j]) {
                     continue;
                 }
-                if(island[i][j]==1) {
+                if (island[i][j] == 1) {
                     islandSize = Math.max(dfs(island, visited, i, j), islandSize);
                     ++numIslands;
                 }
-                // This will give is;and count
+                // This will give island count
             }
         }
         System.out.printf("Number of islands [%d]\n", numIslands);
