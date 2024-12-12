@@ -32,7 +32,9 @@ public class TreesInForestTests {
 
     /**
      * Forest is an array of edges in the form [[src, destination]...], the assumption is all nodes are unique
-     * in the entire forest
+     * in the entire forest.
+     * <br/>
+     * This implementation uses a map to build adjacency list
      *
      * @return Number of trees found in forest
      */
@@ -74,6 +76,10 @@ public class TreesInForestTests {
         }
 
         return treeCount;
+    }
+
+    public static int countTreesUnionFind(int[][] forest) {
+        return -1;
     }
 
     @Test
